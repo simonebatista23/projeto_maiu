@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginUserAdmin.Success"
+             BackgroundColor="#80000000" 
+             Title="Sucesso"
+             Padding="0">
+
+    <Grid VerticalOptions="Fill" HorizontalOptions="Fill">
+        <!-- Modal centralizado -->
+        <Frame BackgroundColor="White"
+               CornerRadius="20"
+               HasShadow="True"
+               Padding="25"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="320">
+
+            <VerticalStackLayout Spacing="20" HorizontalOptions="Center">
+                <!-- Ícone de sucesso -->
+                <Label Text="✅" FontSize="50" HorizontalOptions="Center" />
+
+                <!-- Texto principal -->
+                <Label Text="Login realizado com sucesso!"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#2da0a8"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- Subtítulo -->
+                <Label Text="Você será redirecionado em instantes."
+                       FontSize="16"
+                       HorizontalOptions="Center"
+                       TextColor="#555555"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- Botão fechar -->
+                <Button Text="Fechar"
+                        BackgroundColor="#2da0a8"
+                        TextColor="White"
+                        CornerRadius="15"
+                        HeightRequest="50"
+                        FontAttributes="Bold"
+                        Clicked="OnCloseClicked" />
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

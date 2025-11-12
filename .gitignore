@@ -1,0 +1,25 @@
+# Ignorar pasta do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Binários e build
+bin/
+obj/
+Debug/
+Release/
+
+# Configurações temporárias
+*.cache
+*.log
+*.vsidx
+*.dbmdl
+*.opendb
+
+# Arquivos de publicação
+publish/
+*.tmp
+
+# Configurações do sistema
+*.DS_Store
+Thumbs.db
